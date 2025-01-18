@@ -1,0 +1,11 @@
+server:
+  port: 5000
+  jpa:
+    properties:
+      hibernate:
+        dialect: net.snowflake.hibernate.dialect.SnowflakeDialect
+  datasource:
+    password: <Your Snowflake Account Password>
+    driver-class-name: net.snowflake.client.jdbc.SnowflakeDriver
+    username: <Your Snowflake Account Username>
+    url: jdbc:snowflake://<Your Snowflake Account or Server URL>/?useSSL=false&db=DEMO&schema=USER_MANAGEMENT&warehouse=COMPUTE_WH
